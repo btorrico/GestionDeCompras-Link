@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ogani</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Humberger Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+            </ul>
+            <div class="header__cart__price">item: <span>$150.00</span></div>
+        </div>
+        <div class="humberger__menu__widget">
+
+            <div class="header__top__right__auth">
+
+                <a href="./login.html"><i class="fa fa-user"></i>Mi cuenta</a>
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Inicio</a></li>
+                <li><a href="./shop-grid.html">Productos</a></li>
+                <li><a href="#">Pages</a>
+                    <ul class="header__menu__dropdown">
+                        <li><a href="./shop-details.html">Shop Details</a></li>
+                        <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                        <li><a href="./checkout.html">Check Out</a></li>
+                        <li><a href="./blog-details.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="header__top__right__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        <div class="humberger__menu__contact">
+            <ul>
+                <li><i class="fa fa-envelope"></i> hola@ogani.com</li>
+                <li>Envio gratuito a partir de $3500</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Humberger End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header">
+
+            <!--BARRA DE BUSQUEDA-->
+            <div class="pricipal-container">
+
+
+                <!------------------- LOGO----------------->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="header__logo">
+                                <a href="./index.html"><img class="logo" src="img/logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <nav class="header__menu">
+                                <ul>
+                                    <li class="active"><a href="#">Vendedor</a></li>
+                                    <li><a href="./vendedor-prod-menu.html">Productos</a></li>
+                                    <!--            <li><a href="#">Pages</a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="./shop-details.html">Shop Details</a></li>
+                                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                                    <li><a href="./checkout.html">Check Out</a></li>
+                                </ul>
+                            </li>  -->
+                                    <li><a href="./vendedor-pedidos.html">Pedidos</a></li>
+                                    <li><a href="./vendedor-proveedores.html">Proveedores</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-lg-3-sesion">
+                            <div class="header__top__right__auth">
+                                <a href="./login.html"><i class="fa fa-user"></i>CERRAR SESION</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!----------------------------------------------------------------------------------------------------->
+    <section class="section-emp">
+        <div class="producto">
+
+            <form>
+                <h3>Alta Productos</h3>
+                <p>
+                    <label for="name">
+                        <span>Producto</span>
+                        <strong><abbr title="required">*</abbr></strong>
+                    </label><br>
+                    <input type="text" id="name" name="username">
+                </p>
+                <p>
+                    <label for="marca">
+                        <Span>Marca</span>
+                        <strong><abbr title="required">*</abbr></strong>
+                    </label><br>
+                    <input type="text" id="marca" name="marca">
+                </p>
+                <p>
+                    <label for="description">
+                        <span>Descripcion del Producto</span>
+                    </label><br>
+                    <input type="text" id="description" name="description">
+                </p>
+                <p>
+                    <label for="price">
+                        <span>Precio</span>
+                        <strong><abbr title="required">*</abbr></strong>
+                    </label><br>
+                    <input type="text" id="price" name="price">
+                </p>
+
+                <p>
+
+                    Precio en: </p>
+                <div class="price-form">
+                    <div>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="pesos">
+                        <label class="form-check-label" for="inlineRadio1">$</label>
+                    </div>
+
+                    <div>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="dolares">
+                        <label class="form-check-label" for="inlineRadio2">USD</label>
+                    </div>
+
+                </div>
+
+                <label for="proveedor">Proveedor</label> <br>
+
+                <select name="proveedor"> <br>
+
+                    <option>Proveedor 1</option>
+
+                    <option>Proveedor 2</option>
+                    <option>Proveedor 3</option>
+                    <option>Proveedor 4</option>
+
+                </select>
+                <div>
+                    <button type="submit" class="btn btn-primary">Guardar Producto</button>
+                </div>
+
+    </section>
+
+
+
+
+    </form>
+    </div>
+    </section>
+    <!----------------------------------------------------------------------------------------------------->
+
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>

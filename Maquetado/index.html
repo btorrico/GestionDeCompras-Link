@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ogani</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Humberger Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+            </ul>
+            <div class="header__cart__price">item: <span>$150.00</span></div>
+        </div>
+        <div class="humberger__menu__widget">
+
+            <div class="header__top__right__auth">
+
+                <a href="./login.html"><i class="fa fa-user"></i>Mi cuenta</a>
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Inicio</a></li>
+                <li><a href="./shop-grid.html">Productos</a></li>
+                <li><a href="#">Pages</a>
+                    <ul class="header__menu__dropdown">
+                        <li><a href="./shop-details.html">Shop Details</a></li>
+                        <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                        <li><a href="./checkout.html">Check Out</a></li>
+                        <li><a href="./blog-details.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="header__top__right__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        <div class="humberger__menu__contact">
+            <ul>
+                <li><i class="fa fa-envelope"></i> hola@ogani.com</li>
+                <li>Envio gratuito a partir de $3500</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Humberger End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header">
+
+            <!--BARRA DE BUSQUEDA-->
+            <div class="pricipal-container">
+
+                <div class="hero__search">
+                    <div class="hero__search__form">
+                        <form action="#">
+                            <input type="text" placeholder="¿Qué estas buscando?">
+                            <button type="submit" class="site-btn">BUSCAR</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="header__top__right">
+
+                            <div class="header__top__right__auth">
+                                <a href="./login.html"><i class="fa fa-user"></i>INGRESÁ O REGISTRATE</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!------------------- LOGO----------------->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="header__logo">
+                                <a href="./index.html"><img class="logo" src="img/logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <nav class="header__menu">
+                                <ul>
+                                    <li class="active"><a href="./index.html">Inicio</a></li>
+                                    <li><a href="./shop-grid.html">Productos</a></li>
+                                    <!--            <li><a href="#">Pages</a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="./shop-details.html">Shop Details</a></li>
+                                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                                    <li><a href="./checkout.html">Check Out</a></li>
+                                </ul>
+                            </li>  -->
+                                    <li><a href="./blog.html">Nosotros</a></li>
+                                    <li><a href="./contact.html">Contacto</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="header__cart">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                                    <li><a href="./shoping-cart.html"><i class="fa fa-shopping-bag"></i>
+                                            <span>3</span></a></li>
+                                </ul>
+                                <div class="header__cart__price">item: <span>$150.00</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="humberger__open">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+
+            </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/imagenes/1-slide-1647654117345-8979058178-1c7b2073c248549612ef25a629166c0f1647654122-1920-1920.webp"
+                        class="d-block w-100" alt="carrusel-6">
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagenes/1-slide-1647654117344-5469087145-b6bbcee9fe1d3437e3d87a3dbdc85b481647654121-1920-1920.webp"
+                        class="d-block w-100" alt="carrusel-5">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="/imagenes/1-slide-1641696456640-3074118663-f2df79ce9c405b5d8012f5269db7b9451641696495-1920-1920.webp"
+                        class="d-block w-100" alt="carrusel-2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagenes/1-slide-1643424432079-5536308681-8c52daeb07b0bda5c64a24703d3656fd1643424438-1920-1920.webp"
+                        class="d-block w-100" alt="carrusel-3">
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagenes/1-slide-1644122739501-418793598-cebb18c5a63701a4097e1987832a5d1c1644122742-1920-1920.webp"
+                        class="d-block w-100" alt="carrusel-4">
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagenes/1-slide-1651249477234-7634915300-de4f4fc0af22811aa3fd3d98feeec2291651249587-1920-1920.webp"
+                        class="d-block w-100" alt="carrusel-7">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
+    <!-- Hero Section End -->
+
+    <!-- Categories Section Begin -->
+    <section class="categories">
+        <div class="col-12 text-center">
+            <div class="section-title">
+                <h2>Novedades</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="categories__slider owl-carousel">
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="img/categories/cat-1.jpg">
+
+                        </div>
+                        <h6><a href="#">Frutillas x 300gr - KARINAT</a></h6>
+                        <h5><a href="#">$538.74</a></h5>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="img/categories/cat-2.jpg">
+                        </div>
+                        <h6><a href="#">Not Ice Cream Chocolate Chips x 330gr 100% Vegan - NOTCO</a></h6>
+                        <h5><a href="#">$728.84</a></h5>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="img/categories/cat-3.jpg">
+                        </div>
+                        <h6><a href="#">Not Burger Premium Flow Pack x 160gr (2u) SIN TACC - NOTCO</a></h6>
+                        <h5><a href="#">$433.77</a></h5>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="img/categories/cat-4.jpg">
+                        </div>
+                        <h6><a href="#">Bites Frambuesas Bañadas en Chocolate x 120gr - KARINAT</a></h6>
+                        <h5><a href="#">$498.69</a></h5>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="img/categories/cat-5.jpg">
+                        </div>
+                        <h6><a href="#">Pochoclos Orgánicos con Azúcar x 80 gr - BAMBOO</a></h6>
+                        <h5><a href="#">$203.69</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Categories Section End -->
+
+    <!-- Featured Section Begin -->
+    <section class="featured spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Productos Destacados</h2>
+                    </div>
+                    <div class="featured__controls">
+                        <ul>
+                            <li class="active" data-filter="*">Todos</li>
+                            <li data-filter=".oranges">Los mas buscados</li>
+                            <li data-filter=".fresh-meat">Nuestros preferidos</li>
+                            <li data-filter=".vegetables">Novedades</li>
+                            <li data-filter=".fastfood">Los mas vistos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row featured__filter">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-1.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Karnevil Party x 320gr (4u) - FELICES LAS VACAS</a></h6>
+                            <h5>$618.16</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-2.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Dulce de Leche de Almendras x 250gr - FELICES LAS VACAS</a></h6>
+                            <h5>$277.46</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-3.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Leche de Coco Original x 1 Lt S/TACC - DALE COCO</a></h6>
+                            <h5>$366.48</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood oranges">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-4.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Galletita Cacao y Miel Orgánica x 170gr - CACHAFAZ</a></h6>
+                            <h5>$193.99</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-5.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Pizzas de Masa Integral Fugazzeta x 290g - BEEPURE</a></h6>
+                            <h5>$578.11</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-6.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Vegan Nuggets de Quinoa y Garbanzos x 300 gr - GREEN KITCHEN</a></h6>
+                            <h5>$510.84</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-7.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Jugo Detox Remolacha, Naranja y Zanahoria x 1 Lts - CUARTO CRECIENTE</a>
+                            </h6>
+                            <h5>$205.50</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-8.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Not Chicken Nuggets x 400gr - NOTCO</a></h6>
+                            <h5>$773.56</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-9.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Galletitas de Almendras y Harina de Garbanzos x 180 gr Sin TACC - LOVVIT</a>
+                            </h6>
+                            <h5>$285.62</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-10.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Burganas Hamburguesa de Berenjena + Pimentón Ahumado 4U x 460gr - TIENDA
+                                    VEGGIE</a></h6>
+                            <h5>$352.89</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-11.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Empanadas Chinas de Carne y Acelga x 276 gr - FU BAO</a></h6>
+                            <h5>$462.04</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-12.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Nuggets sabor Pollo x 300gr - FELICES LAS VACAS</a></h6>
+                            <h5>$578.15</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Section End -->
+
+    <!-- Banner Begin -->
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="banner__pic">
+                        <img class="textbanner-image-background lazyautosizes blur-up-huge lazyloaded"
+                            src="//d3ugyf2ht6aenh.cloudfront.net/stores/001/434/490/themes/amazonas/1-img-1136274208-1632371657-fb1bf13a81f47f7ba3c0f2a438f22a271632371657-50-0.webp?953421219"
+                            data-srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/001/434/490/themes/amazonas/1-img-1136274208-1632371657-fb1bf13a81f47f7ba3c0f2a438f22a271632371657-480-0.webp?953421219 480w, //d3ugyf2ht6aenh.cloudfront.net/stores/001/434/490/themes/amazonas/1-img-1136274208-1632371657-fb1bf13a81f47f7ba3c0f2a438f22a271632371657-640-0.webp?953421219 640w"
+                            data-sizes="auto" data-expand="-10" alt="Banner de The Fresh Market ®" sizes="350px"
+                            srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/001/434/490/themes/amazonas/1-img-1136274208-1632371657-fb1bf13a81f47f7ba3c0f2a438f22a271632371657-480-0.webp?953421219 480w, //d3ugyf2ht6aenh.cloudfront.net/stores/001/434/490/themes/amazonas/1-img-1136274208-1632371657-fb1bf13a81f47f7ba3c0f2a438f22a271632371657-640-0.webp?953421219 640w">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="banner__pic">
+                        <img class="textbanner-image-background lazyautosizes blur-up-huge ls-is-cached lazyloaded"
+                            src="//d3ugyf2ht6aenh.cloudfront.net/stores/001/434/490/themes/amazonas/1-img-1949779549-1632371656-a2a16b4fefe7518d0eda503d1df154de1632371656-50-0.webp?953421219"
+                            data-srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/001/434/490/themes/amazonas/1-img-1949779549-1632371656-a2a16b4fefe7518d0eda503d1df154de1632371656-480-0.webp?953421219 480w, //d3ugyf2ht6aenh.cloudfront.net/stores/001/434/490/themes/amazonas/1-img-1949779549-1632371656-a2a16b4fefe7518d0eda503d1df154de1632371656-640-0.webp?953421219 640w"
+                            data-sizes="auto" data-expand="-10" alt="Banner de The Fresh Market ®" sizes="350px"
+                            srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/001/434/490/themes/amazonas/1-img-1949779549-1632371656-a2a16b4fefe7518d0eda503d1df154de1632371656-480-0.webp?953421219 480w, //d3ugyf2ht6aenh.cloudfront.net/stores/001/434/490/themes/amazonas/1-img-1949779549-1632371656-a2a16b4fefe7518d0eda503d1df154de1632371656-640-0.webp?953421219 640w">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="banner__pic">
+                        <img class="textbanner-image-background lazyautosizes blur-up-huge lazyloaded"
+                            src="//d3ugyf2ht6aenh.cloudfront.net/stores/001/434/490/themes/amazonas/1-img-717881036-1632371654-793f94c5e82548fbf59f97ceebc0cf5b1632371655-50-0.webp?953421219"
+                            data-srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/001/434/490/themes/amazonas/1-img-717881036-1632371654-793f94c5e82548fbf59f97ceebc0cf5b1632371655-480-0.webp?953421219 480w, //d3ugyf2ht6aenh.cloudfront.net/stores/001/434/490/themes/amazonas/1-img-717881036-1632371654-793f94c5e82548fbf59f97ceebc0cf5b1632371655-640-0.webp?953421219 640w"
+                            data-sizes="auto" data-expand="-10" alt="Banner de The Fresh Market ®" sizes="350px"
+                            srcset="//d3ugyf2ht6aenh.cloudfront.net/stores/001/434/490/themes/amazonas/1-img-717881036-1632371654-793f94c5e82548fbf59f97ceebc0cf5b1632371655-480-0.webp?953421219 480w, //d3ugyf2ht6aenh.cloudfront.net/stores/001/434/490/themes/amazonas/1-img-717881036-1632371654-793f94c5e82548fbf59f97ceebc0cf5b1632371655-640-0.webp?953421219 640w">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                        <p>En Ogani® amamos lo sano, rico y natural!. Llegamos a tu casa con alimentos conscientes
+                            que contribuyen a una mejor alimentación, directo del productor y al mejor precio!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 ">
+                    <div class="footer__widget">
+                        <h6>Nosotros</h6>
+                        <ul>
+                            <li><a href="#">Sobre Nosotros</a></li>
+                            <li><a href="#">Contactanos</a></li>
+                            <li><a href="#">Zonas de envios</a></li>
+                            <li><a href="#">Politica de Devolucion</a></li>
+                            <li><a href="#">Como Comprar</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__widget">
+
+                        <h6>Contactános</h6>
+                        <ul>
+                            <li>Buenos Aires</li>
+                            <li>1123241536</li>
+                            <li>hola@ogani.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Sigamos en Contacto</h6>
+
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div class="footer__copyright__text">
+                            <p>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;<script>
+                                    document.write(new Date().getFullYear());
+                                </script> The Ogani®. Todos los derechos reservados. <i class="fa fa-heart"
+                                    aria-hidden="true"></i> by <b>Brenda Torrico</b>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                        <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>
