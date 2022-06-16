@@ -3,9 +3,9 @@ package com.redLink.gestionDeCompras.repository;
 
 import com.redLink.gestionDeCompras.model.CarritoDeCompra;
 import org.springframework.data.repository.PagingAndSortingRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-@Repository
+@RepositoryRestResource(path="carritoDeCompras")
 public interface ICarritoDeCompraRepository extends PagingAndSortingRepository<CarritoDeCompra,Long>{
     
 }

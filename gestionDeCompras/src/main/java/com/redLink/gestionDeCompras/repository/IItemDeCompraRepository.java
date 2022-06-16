@@ -1,12 +1,10 @@
 
 package com.redLink.gestionDeCompras.repository;
-
-import com.redLink.gestionDeCompras.model.Administrador;
+import com.redLink.gestionDeCompras.model.ItemDeCompra;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-@RepositoryRestResource(path= "administradores")
-public interface IAdministradorRepository extends PagingAndSortingRepository<Administrador,Long>{
+@RepositoryRestResource(path = "itemsDeCompra")
+public interface IItemDeCompraRepository extends PagingAndSortingRepository<ItemDeCompra,Long> {
     
-
 }

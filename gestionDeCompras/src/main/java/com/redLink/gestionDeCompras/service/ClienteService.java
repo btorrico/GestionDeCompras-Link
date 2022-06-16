@@ -44,7 +44,7 @@ public class ClienteService implements IClienteService {
         return listaClientes;     
     }
 
-
+/* CORREGIR
     @Override
     public void editCliente(Long idClienteOriginal, 
                             Long idClienteNuevo, 
@@ -68,7 +68,7 @@ public class ClienteService implements IClienteService {
     }
 
    
-
+*/
 }
 
 

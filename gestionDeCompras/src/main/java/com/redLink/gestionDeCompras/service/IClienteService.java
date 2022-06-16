@@ -17,6 +17,8 @@ public interface IClienteService {
     public void deleteCliente(Long id);
     
     //Modificacion cliente
+    
+    /*CORREGIR
     public void editCliente(Long idClienteOriginal,
                             Long idClienteNuevo,
                             String nombreNuevo,
@@ -25,7 +27,7 @@ public interface IClienteService {
                            String documentoNuevo,
                             String telefonoNuevo,
                             String mailNuevo);
-    
+    */
     //Lista de clientes
     public List<Cliente> getClientes();
 

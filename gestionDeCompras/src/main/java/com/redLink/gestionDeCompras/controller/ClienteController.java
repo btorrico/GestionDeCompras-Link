@@ -36,7 +36,7 @@ public class ClienteController {
         clienteService.deleteCliente(idCliente);
         return "El cliente se eliminado satisfactoriamente";
     }
-        
+  /* CORREGIR      
     @PutMapping("cliente/modificar/{idClienteOriginal}")
         public Cliente editCliente(@PathVariable Long idClienteOriginal,
                            @RequestParam(required = false, name ="idCliente") Long idClienteNuevo,
@@ -53,6 +53,8 @@ public class ClienteController {
         
         return clienteModificado;
         }  
+
+*/
 
     @GetMapping("/clientes/traer")
         public List<Cliente> getClientes(){

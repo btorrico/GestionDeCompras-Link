@@ -11,6 +11,7 @@ class ApiDolar {
     private String venta;
 
     public ApiDolar(String fecha, String compra, String venta) {
+        super();
         this.fecha = fecha;
         this.compra = compra;
         this.venta = venta;
@@ -18,7 +19,7 @@ class ApiDolar {
 
 
     public ApiDolar() {
-        super();
+        
     }
     
     

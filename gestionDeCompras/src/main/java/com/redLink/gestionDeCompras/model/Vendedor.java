@@ -19,9 +19,9 @@ public class Vendedor extends Usuario{
     private String documento;
     private String telefono;
     private String mail;
-    @OneToMany
+    @OneToMany(mappedBy= "vendedor")
     List<OrdenDeCompra> ordenDeCompra;
-    @OneToMany
+    @OneToMany(mappedBy= "vendedor")
     private List<Producto> productos;
 
     public Vendedor(String nombre, String apellido, List<Proveedor> proveedores, String direccion, String documento, String telefono, String mail) {
