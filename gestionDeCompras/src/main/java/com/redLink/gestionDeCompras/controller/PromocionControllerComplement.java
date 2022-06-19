@@ -4,6 +4,6 @@ package com.redLink.gestionDeCompras.controller;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class OrdenDeCompraController {
+public class PromocionControllerComplement {
     
 }

@@ -50,9 +50,14 @@
 	 <dependency>
 	  <groupId>org.springframework.data</groupId>
 	  <artifactId>spring-data-rest-core</artifactId>
-	  <version>3.7.0</version>
 	  <type>jar</type>
 	 </dependency>
+	 
+	 <dependency>
+  <groupId>org.postgresql</groupId>
+  <artifactId>postgresql</artifactId>
+</dependency>
+	 
 	</dependencies>
 
 	<build>

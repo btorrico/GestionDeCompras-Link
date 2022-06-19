@@ -32,6 +32,9 @@ public class OrdenDeCompra {
     private Cliente cliente;
     @ManyToOne
     private Vendedor vendedor;
+    
+    private float precio;
+    private float total;
 
    // private MedioDePago medioDePago;
     // private Proveedor proveedor; Lo estoy viendo
@@ -77,5 +80,5 @@ public class OrdenDeCompra {
     }
     
 
-    
+    //falta calcular el precio Total
 }

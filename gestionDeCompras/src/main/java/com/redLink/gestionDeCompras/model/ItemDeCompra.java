@@ -14,6 +14,7 @@ import lombok.Setter;
 @Getter @Setter
 @Entity
  public class ItemDeCompra {
+
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Long idItem;
@@ -56,5 +57,7 @@ import lombok.Setter;
     public Float precioDolar(){
         return producto.getPrecioDolar() * this.cantidadProducto;
     }
+
+
     
 }

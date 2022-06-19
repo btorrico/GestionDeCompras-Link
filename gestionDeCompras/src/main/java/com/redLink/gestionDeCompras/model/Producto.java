@@ -33,7 +33,7 @@ public class Producto {
     @ManyToOne
     private Vendedor vendedor;
  
-   /*  Lo unico que falta arreglar
+   /* Lo unico que falta arreglar
     @Value("${gestionDeCompras.apiDolares}")
     String apiDolares;
 */

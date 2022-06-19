@@ -1,5 +1,6 @@
 
 package com.redLink.gestionDeCompras.model;
+import java.io.Serializable;
 import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
@@ -9,7 +10,7 @@ import lombok.Setter;
 
 @Getter @Setter
 @Entity
-public class Vendedor extends Usuario{
+public class Vendedor extends Rol implements Serializable{
 
     private String nombre;
     private String apellido;  
@@ -36,7 +37,7 @@ public class Vendedor extends Usuario{
     }
 
     public Vendedor(String nombre, String apellido, List<Proveedor> proveedores, String direccion, String documento, String telefono, String mail, String usuario, String contrasenia) {
-        super(usuario, contrasenia);
+
         this.nombre = nombre;
         this.apellido = apellido;
         this.proveedores = proveedores;
@@ -44,11 +45,6 @@ public class Vendedor extends Usuario{
         this.documento = documento;
         this.telefono = telefono;
         this.mail = mail;
-    }
-    
-    public Vendedor(Long idVendedor, String usuario, String contrasenia){
-        super(idVendedor,usuario,contrasenia);
-      
     }
 
     public Vendedor() {
