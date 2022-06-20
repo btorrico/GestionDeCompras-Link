@@ -38,7 +38,16 @@ public class Administrador extends Usuario{
         promociones.remove(promocion);
         
     }
-  */  
+    
+  */
+public Administrador(String nombre, String apellido, String documento) {
+	super();
+	this.nombre = nombre;
+	this.apellido = apellido;
+	this.documento = documento;
+}
+ 
+    
     
 
 

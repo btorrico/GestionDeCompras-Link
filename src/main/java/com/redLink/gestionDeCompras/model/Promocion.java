@@ -21,15 +21,15 @@ public abstract class Promocion {
     private TipoDePromocion tipoDePromocion;
     private TipoDeDescuento tipoDeDescuento;
     private LocalDate fechaInicioPromo;
-    private LocalDate fechaFinPromo; // a ver dijo el ciego
+    private LocalDate fechaFinPromo; 
     private Float cantidadDescontada;
 
     public Promocion() {
     }
 
-    int descuento() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+
+
+	public abstract Double descuento(CarritoDeCompra carritoDeCompra);
     
     
 }

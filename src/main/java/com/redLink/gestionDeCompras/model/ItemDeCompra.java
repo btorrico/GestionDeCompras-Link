@@ -58,6 +58,16 @@ import lombok.Setter;
         return producto.getPrecioDolar() * this.cantidadProducto;
     }
 
+	public void setProducto(Producto producto) {
+		this.producto = producto;
+	}
+
+	public Producto getProducto() {
+		return producto;
+	}
+
+
+
 
     
 }

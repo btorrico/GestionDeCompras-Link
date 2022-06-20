@@ -8,6 +8,12 @@ import lombok.Setter;
 @Getter @Setter
 @Entity
 public class Membresia extends Promocion{
+
+	@Override
+	public Double descuento(CarritoDeCompra carritoDeCompra) {
+		// TODO Auto-generated method stub
+		return null;
+	}
     
   //  private Cliente cliente;
     

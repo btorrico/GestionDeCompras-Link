@@ -18,43 +18,39 @@ public class Vendedor extends Usuario{
     private List<Proveedor> proveedores;
     private String direccion;
     private String documento;
-    private String telefono;
     @OneToMany(mappedBy= "vendedor")
     List<OrdenDeCompra> ordenDeCompra;
     @OneToMany(mappedBy= "vendedor")
     private List<Producto> productos;
 
-    public Vendedor(String nombre, String apellido, List<Proveedor> proveedores, String direccion, String documento, String telefono) {
+    public Vendedor(String nombre, String apellido, List<Proveedor> proveedores, String direccion, String documento) {
         super();
         this.nombre = nombre;
         this.apellido = apellido;
         this.proveedores = proveedores;
         this.direccion = direccion;
         this.documento = documento;
-        this.telefono = telefono;
     }
 
-    public Vendedor(String nombre, String apellido, List<Proveedor> proveedores, String direccion, String documento, String telefono, String usuario, String contrasenia) {
+    public Vendedor(String nombre, String apellido, List<Proveedor> proveedores, String direccion, String documento, String usuario, String contrasenia) {
 
         this.nombre = nombre;
         this.apellido = apellido;
         this.proveedores = proveedores;
         this.direccion = direccion;
         this.documento = documento;
-        this.telefono = telefono;
     }
 
     public Vendedor() {
         super();
     }
 
-    public Vendedor(String nombre, String apellido, List<Proveedor> proveedores, String direccion, String documento, String telefono, List<OrdenDeCompra> ordenDeCompra, List<Producto> productos) {
+    public Vendedor(String nombre, String apellido, List<Proveedor> proveedores, String direccion, String documento, List<OrdenDeCompra> ordenDeCompra, List<Producto> productos) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.proveedores = proveedores;
         this.direccion = direccion;
         this.documento = documento;
-        this.telefono = telefono;
         this.ordenDeCompra = ordenDeCompra;
         this.productos = productos;
     }

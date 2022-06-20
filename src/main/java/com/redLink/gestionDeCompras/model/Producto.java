@@ -12,6 +12,8 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.web.client.RestTemplate;
 
+import com.redLink.gestionDeCompras.excepciones.SinStockException;
+
 @Getter @Setter
 @Entity
 public class Producto {
@@ -20,7 +22,6 @@ public class Producto {
     private Long idProducto;
     private String nombre;
     private String descripcion;
-    private String marca;
     private int cantStock; 
     @Enumerated(EnumType.STRING)
     CategoriaDeProducto categoria;
@@ -29,6 +30,8 @@ public class Producto {
     private Float precioPesos;
   //  private Cotizador cotizacion; // Precio USD
     private Float precioDolar;
+    @ManyToOne
+    private Proveedor proveedor;
     
     @ManyToOne
     private Vendedor vendedor;
@@ -54,11 +57,10 @@ public class Producto {
     public Producto() {
     }
 
-    public Producto(Long idProducto, String nombre, String descripcion, String marca, int cantStock, CategoriaDeProducto categoria, Float precioPesos, Float precioDolar, Vendedor vendedor) {
+    public Producto(Long idProducto, String nombre, String descripcion,int cantStock, CategoriaDeProducto categoria, Float precioPesos, Float precioDolar, Vendedor vendedor) {
         this.idProducto = idProducto;
         this.nombre = nombre;
         this.descripcion = descripcion;
-        this.marca = marca;
         this.cantStock = cantStock;
         this.categoria = categoria;
         this.precioPesos = precioPesos;
@@ -66,20 +68,18 @@ public class Producto {
         this.vendedor = vendedor;
     }
 
-    public Producto(String nombre, String descripcion, String marca, int cantStock, Float precioPesos, Float precioDolar, Vendedor vendedor) {
+    public Producto(String nombre, String descripcion,int cantStock, Float precioPesos, Float precioDolar, Vendedor vendedor) {
         this.nombre = nombre;
         this.descripcion = descripcion;
-        this.marca = marca;
         this.cantStock = cantStock;
         this.precioPesos = precioPesos;
         this.precioDolar = precioDolar;
         this.vendedor = vendedor;
     }
 
-    public Producto(String nombre, String descripcion, String marca, int cantStock, CategoriaDeProducto categoria, Float precioPesos, Float precioDolar, Vendedor vendedor) {
+    public Producto(String nombre, String descripcion,int cantStock, CategoriaDeProducto categoria, Float precioPesos, Float precioDolar, Vendedor vendedor) {
         this.nombre = nombre;
         this.descripcion = descripcion;
-        this.marca = marca;
         this.cantStock = cantStock;
         this.categoria = categoria;
         this.precioPesos = precioPesos;
@@ -109,7 +109,65 @@ public class Producto {
             return this.precioPesos / this.valorActualDolar();
         }
         return this.precioDolar;
-    }    
+    }
+    
+    //falta ver bien como se hace la cotizacion
+
+	public Proveedor getProveedor() {
+		return proveedor;
+	}
+
+	public void setProveedor(Proveedor proveedor) {
+		this.proveedor = proveedor;
+	}
+
+    public void adquirirProducto(int cantidadAdquirida) throws SinStockException{
+    	if(cantStock >= cantidadAdquirida) {
+    		this.setCantStock(this.getCantStock() - cantidadAdquirida);
+    	}else {
+    		throw new SinStockException("No hay stock suficiente del producto", nombre);
+    	}
+    }
+    
+   
+    
+	public int getCantStock() {
+		return cantStock;
+	}
+
+	public void setCantStock(int cantStock) {
+		this.cantStock = cantStock;
+	}
+
+	public void renovarStock(int cantidadAAgregar) {
+		cantStock = this.getCantStock() + cantidadAAgregar;
+	}
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((idProducto == null) ? 0 : idProducto.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Producto other = (Producto) obj;
+		if (idProducto == null) {
+			if (other.idProducto != null)
+				return false;
+		} else if (!idProducto.equals(other.idProducto))
+			return false;
+		return true;
+	}
+
 
 
 

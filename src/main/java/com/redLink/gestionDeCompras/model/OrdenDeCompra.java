@@ -79,6 +79,9 @@ public class OrdenDeCompra {
         return itemsDeCompra.stream().mapToDouble(x->x.precioDolar()).average();
     }
     
+    public void agregarPromo(Promocion promocion) {
+    	promocionesAplicadas.add(promocion);
+    }
 
     //falta calcular el precio Total
 }
