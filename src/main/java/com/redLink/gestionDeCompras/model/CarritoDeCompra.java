@@ -27,9 +27,6 @@ public class CarritoDeCompra {
         this.id = id;
     }
     
-    
-    //Tendria que tener los productos cargados para despues poder pasarselos a la
-    //orden de compra cuando esta se genere?
 
     public CarritoDeCompra() {
     }
