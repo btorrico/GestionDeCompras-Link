@@ -89,7 +89,18 @@ public class Producto {
 
     
     
-    public Producto(String nombre, String descripcion, int cantStock, CategoriaDeProducto categoria, Float precioPesos,
+    
+    public Producto(String nombre, String descripcion, int cantStock, CategoriaDeProducto categoria,
+			Float precioPesos) {
+		super();
+		this.nombre = nombre;
+		this.descripcion = descripcion;
+		this.cantStock = cantStock;
+		this.categoria = categoria;
+		this.precioPesos = precioPesos;
+	}
+
+	public Producto(String nombre, String descripcion, int cantStock, CategoriaDeProducto categoria, Float precioPesos,
 			Proveedor proveedor, Vendedor vendedor) {
 		super();
 		this.nombre = nombre;

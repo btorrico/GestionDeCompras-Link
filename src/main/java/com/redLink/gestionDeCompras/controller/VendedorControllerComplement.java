@@ -42,7 +42,7 @@ public class  VendedorControllerComplement {
 
 	//Alta Vendedor
 	@Transactional
-	@PostMapping("/vendedores")
+	@PostMapping("/vendedores/crear")
 	public Vendedor guardarVendedor(@RequestBody Vendedor vendedor) {
 		return repoVendedor.save(vendedor);
 	}

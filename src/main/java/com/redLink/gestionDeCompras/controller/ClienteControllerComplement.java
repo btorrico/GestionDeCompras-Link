@@ -61,7 +61,7 @@ public class ClienteControllerComplement {
 	public ResponseEntity<Cliente> actualizarCliente(@PathVariable Long id,@RequestBody Cliente detallesCliente){
 		Cliente cliente = clienteRepo.findById(id)
 				            .orElseThrow(() -> new ResourceNotFoundException("No existe el cliente con el ID : " + id));
-		
+		//Falta agregar usuario y contrasenia
 		cliente.setNombre(detallesCliente.getNombre());
 		cliente.setApellido(detallesCliente.getApellido());
 		cliente.setDireccion(detallesCliente.getDireccion());
