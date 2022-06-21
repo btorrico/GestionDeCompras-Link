@@ -4,6 +4,8 @@ package com.redLink.gestionDeCompras.model;
 import java.util.UUID;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -29,7 +31,8 @@ public class Usuario {
     //String id;
     private String usuario;
     private String contrasenia;
-    private TipoUsuario tipoUsuario;
+    @Enumerated(EnumType.STRING)
+    TipoUsuario tipoUsuario;
 
 
 
@@ -42,6 +45,32 @@ public class Usuario {
         this.contrasenia = contrasenia;
 
     }
+
+		public Usuario(Long id, String usuario, String contrasenia, TipoUsuario tipoUsuario) {
+			super();
+			this.id = id;
+			this.usuario = usuario;
+			this.contrasenia = contrasenia;
+			this.tipoUsuario = tipoUsuario;
+		}
+
+		public Usuario(Long id, String usuario, String contrasenia) {
+			super();
+			this.id = id;
+			this.usuario = usuario;
+			this.contrasenia = contrasenia;
+		}
+
+		public Usuario(String usuario, String contrasenia, TipoUsuario tipoUsuario) {
+			super();
+			this.usuario = usuario;
+			this.contrasenia = contrasenia;
+			this.tipoUsuario = tipoUsuario;
+		}
+
+		
+        
+        
 
     
 }

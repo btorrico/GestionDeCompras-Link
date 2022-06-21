@@ -23,6 +23,7 @@ public interface IClienteRepository extends PagingAndSortingRepository<Cliente,L
     @Override
     @RestResource(exported = false)
          void deleteById(Long Id);
+    
 /*      
     //Alta de cliente
     public void saveCliente(Cliente cliente);

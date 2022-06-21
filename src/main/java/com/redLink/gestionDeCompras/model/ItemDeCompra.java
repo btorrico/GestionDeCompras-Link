@@ -44,13 +44,16 @@ import lombok.Setter;
         this.ordenDeCompra = ordenDeCompra;
     }
 
-    public ItemDeCompra(Producto producto, int cantidadProducto, OrdenDeCompra ordenDeCompra) {
-        this.producto = producto;
-        this.cantidadProducto = cantidadProducto;
-        this.ordenDeCompra = ordenDeCompra;
-    }
+
     
-    public Float precioPesos(){
+    public ItemDeCompra(Producto producto, int cantidadProducto, OrdenDeCompra ordenDeCompra) {
+		super();
+		this.producto = producto;
+		this.cantidadProducto = cantidadProducto;
+		this.ordenDeCompra = ordenDeCompra;
+	}
+
+	public Float precioPesos(){
         return producto.getPrecioPesos() * this.cantidadProducto;
     }
     

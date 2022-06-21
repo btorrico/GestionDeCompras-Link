@@ -44,8 +44,27 @@ public class Proveedor {
         this.mail = mail;
         this.vendedores = vendedores;
     }
+    
 
-    public Proveedor(String nombre, List<Vendedor> vendedores) {
+    public Proveedor(String usuario,String contrasenia, TipoUsuario rol,String nombre, String direccion, String telefono, String mail) {
+		super();
+		this.nombre = nombre;
+		this.direccion = direccion;
+		this.telefono = telefono;
+		this.mail = mail;
+	}
+    
+    public Proveedor(String usuario,String contrasenia,String nombre, String direccion, String telefono, String mail) {
+		super();
+		this.nombre = nombre;
+		this.direccion = direccion;
+		this.telefono = telefono;
+		this.mail = mail;
+	}
+    
+    
+
+	public Proveedor(String nombre, List<Vendedor> vendedores) {
         super();
         this.nombre = nombre;
         this.vendedores = vendedores;

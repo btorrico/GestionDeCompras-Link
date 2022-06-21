@@ -10,9 +10,11 @@ import lombok.Setter;
 @Entity
 public class Administrador extends Usuario{
 
-    private String nombre;
-    private String apellido;
-    private String documento;   
+//    private String nombre;
+  //  private String apellido;
+    //private String documento;
+	
+	
  //   @OneToMany(mappedBy = "administrador")
   //  private List<Cliente> clientes;  
    // private List<Vendedor> vendedores;
@@ -40,12 +42,28 @@ public class Administrador extends Usuario{
     }
     
   */
-public Administrador(String nombre, String apellido, String documento) {
-	super();
-	this.nombre = nombre;
-	this.apellido = apellido;
-	this.documento = documento;
-}
+
+	public Administrador(Long id, String usuario, String contrasenia, TipoUsuario tipoUsuario) {
+		super(id, usuario, contrasenia, tipoUsuario);
+		// TODO Auto-generated constructor stub
+	}
+
+	public Administrador(Long id, String usuario, String contrasenia) {
+		super(id, usuario, contrasenia);
+		// TODO Auto-generated constructor stub
+	}
+
+	public Administrador(String usuario, String contrasenia, TipoUsuario tipoUsuario) {
+		super(usuario, contrasenia, tipoUsuario);
+		// TODO Auto-generated constructor stub
+	}
+
+	public Administrador(String usuario, String contrasenia) {
+		super(usuario, contrasenia);
+		// TODO Auto-generated constructor stub
+	}
+    
+
  
     
     

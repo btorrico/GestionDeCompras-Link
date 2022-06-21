@@ -23,8 +23,8 @@ public class Vendedor extends Usuario{
     @OneToMany(mappedBy= "vendedor")
     private List<Producto> productos;
 
-    public Vendedor(String nombre, String apellido, List<Proveedor> proveedores, String direccion, String documento) {
-        super();
+    public Vendedor(String usuario,String contrasenia, TipoUsuario rol,String nombre, String apellido, List<Proveedor> proveedores, String direccion, String documento) {
+        super(usuario,contrasenia,rol);
         this.nombre = nombre;
         this.apellido = apellido;
         this.proveedores = proveedores;

@@ -6,5 +6,6 @@ public enum CategoriaDeProducto {
     ALMACEN,
     BEBIDAS,
     SNACKS,
-    OFERTAS
+    OFERTAS,
+    CONGELADOS
 }

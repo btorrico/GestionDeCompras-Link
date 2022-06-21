@@ -87,7 +87,21 @@ public class Producto {
         this.vendedor = vendedor;
     }
 
-    private Float valorActualDolar(){
+    
+    
+    public Producto(String nombre, String descripcion, int cantStock, CategoriaDeProducto categoria, Float precioPesos,
+			Proveedor proveedor, Vendedor vendedor) {
+		super();
+		this.nombre = nombre;
+		this.descripcion = descripcion;
+		this.cantStock = cantStock;
+		this.categoria = categoria;
+		this.precioPesos = precioPesos;
+		this.proveedor = proveedor;
+		this.vendedor = vendedor;
+	}
+
+	private Float valorActualDolar(){
             // Consumo de api con RestTemplate
     RestTemplate restTemplate= new RestTemplate();
         String urlApi = "https://api-dolar-argentina.herokuapp.com/api/dolaroficial";

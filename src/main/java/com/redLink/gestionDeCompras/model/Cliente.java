@@ -27,14 +27,7 @@ public class Cliente extends Usuario{
 
     }
     
-        public Cliente(String usuario,String contrasenia, String nombre, String apellido, String direccion, String documento, String telefono) {
 
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.direccion = direccion;
-        this.documento = documento;
-        this.telefono = telefono;
-    }
 
     public Cliente(String usuario,String contrasenia, String nombre, String apellido, String direccion, String documento, String telefono, List<OrdenDeCompra> comprasRealizadas) {
         super();
@@ -45,6 +38,23 @@ public class Cliente extends Usuario{
         this.telefono = telefono;
         this.comprasRealizadas= comprasRealizadas;
     }
+        public Cliente( String usuario,String contrasenia,TipoUsuario rol,String nombre, String apellido, String direccion, String documento, String telefono) {
+        super(usuario,contrasenia,rol);
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.direccion = direccion;
+        this.documento = documento;
+        this.telefono = telefono;
+    }
+        public Cliente( String usuario,String contrasenia,String nombre, String apellido, String direccion, String documento, String telefono) {
+        super(usuario,contrasenia);
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.direccion = direccion;
+        this.documento = documento;
+        this.telefono = telefono;
+    }
+        
         public Cliente( String nombre, String apellido, String direccion, String documento, String telefono) {
         this.nombre = nombre;
         this.apellido = apellido;
